@@ -17,41 +17,20 @@
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
-    background-image: url("https://github.com/Falcon-peregrinus/my-little-lor/raw/master/res/images/bg.png");
-	}
+    background-image: url("https://github.com/Falcon-peregrinus/my-little-lor/raw/master/res/images/bg.png")
+    }
   #sitetitle {
     background-image: url("https://github.com/Falcon-peregrinus/my-little-lor/raw/master/res/images/logo-s.png");
     background-position: center center;
     background-repeat: no-repeat;
     height: 60px;
     text-indent: -9992px;
-    width: 160px; } }
+    width: 160px; } 
 
-@-moz-document url("http://www.linux.org.ru/") {
-  #sitetitle {
-    background-image: url("https://github.com/Falcon-peregrinus/my-little-lor/raw/master/res/images/logo.png");
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    height: 321px !important;
-    text-indent: -9992px !important;
-    width: 23% !important; }
-
-  @media (max-width: 60em) {
-    #hd #sitetitle {
-      background-image: url("https://github.com/Falcon-peregrinus/my-little-lor/raw/master/res/images/logo-s.png");
-      background-position: center center !important;
-      background-repeat: no-repeat !important;
-      height: 60px !important;
-      text-indent: -9992px !important;
-      width: 160px !important; } } }
-
-@namespace url(http://www.w3.org/1999/xhtml);
-@-moz-document domain("www.linux.org.ru") {
   .icon-star:before, .icon-star-empty:before {
     font-family: "stars" !important;
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     text-decoration: inherit;
     width: 1em;
@@ -186,4 +165,22 @@
     background: white !important;
     color: #ed3c95 !important; }
     .code * {
-      color: #ed3c95 !important; } }
+      color: #ed3c95 !important;  } }
+      
+@-moz-document url("http://www.linux.org.ru/"), url("https://www.linux.org.ru/") {
+  #sitetitle {
+    background-image: url("https://github.com/Falcon-peregrinus/my-little-lor/raw/master/res/images/logo.png");
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    height: 321px !important;
+    text-indent: -9992px !important;
+    width: 23% !important; }
+
+  @media (max-width: 60em) {
+    #hd #sitetitle {
+      background-image: url("https://github.com/Falcon-peregrinus/my-little-lor/raw/master/res/images/logo-s.png");
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      height: 60px !important;
+      text-indent: -9992px !important;
+      width: 160px !important; } } }
